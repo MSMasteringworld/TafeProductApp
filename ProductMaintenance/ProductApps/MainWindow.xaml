@@ -10,8 +10,12 @@
         <Label HorizontalAlignment="Left" Height="60" Margin="46,190,0,0" VerticalAlignment="Top" Width="120">
             <AccessText TextWrapping="Wrap" Text="Total Charge after Adding the delivery charge ($25.00):"/>
         </Label>
+        <Label HorizontalAlignment="Left" Height="60" Margin="46,250,0,0" VerticalAlignment="Top" Width="120">
+            <AccessText TextWrapping="Wrap" Text="Total Charge after Adding the wrap charge ($5.00):"/>
+        </Label>
         <TextBlock Name="totalPaymentTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBlock Name="totalChargeTextBox" HorizontalAlignment="Left" Height="23" Margin="164,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBlock Name="totalChargeinclDelTextBox" HorizontalAlignment="Left" Height="23" Margin="164,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBox Name="productTextBox" HorizontalAlignment="Left" Height="24" Margin="122,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
         <TextBox Name="priceTextBox" HorizontalAlignment="Left" Height="24" Margin="122,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
         <TextBox x:Name="quantityTextBox" HorizontalAlignment="Left" Height="24" Margin="122,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>

@@ -12,6 +12,7 @@ namespace ProductApps
         private int quantity;
         private decimal totalPayment;
         private decimal totalPaymentInclDel;
+        private decimal totalPaymentInclDelWrap;
         private decimal delivery;
         private decimal wrapping;
         private decimal gst;
@@ -37,6 +38,11 @@ namespace ProductApps
         {
             get { return totalPaymentInclDel; }
             set { totalPaymentInclDel = value; }
+        }
+        public decimal TotalPaymentInclDelWrap
+        {
+            get { return totalPaymentInclDelWrap; }
+            set { totalPaymentInclDelWrap = value; }
         }
 
         private decimal Delivery
@@ -73,6 +79,10 @@ namespace ProductApps
         public void calTotalPaymentInclDel()
         {
             TotalPaymentInclDel = (Price * Quantity)+25;
+        }
+        public void calTotalPaymentInclDelWrap()
+        {
+            TotalPaymentInclDelWrap = (Price * Quantity) + 25 + 5;
         }
     }
 }
